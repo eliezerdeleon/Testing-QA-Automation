@@ -7,12 +7,12 @@ import cucumber.api.java.en.When;
 
 public class GoogleSteps {
     
-@Given("^navego a google$")
+@Given("^I am on the Google search page$")
 public void navigateToGoogle(){
 
 }
 
-@When("^busco algo$")
+@When("^I enter a search criteria$")
 public void searchSomething(){
 
 }
@@ -22,7 +22,7 @@ public void clickOnSearch(){
 
 }
 
-@Then("^obtengo resultados$")
+@Then("^the results match the criteria$")
 public void obtainResults(){
 
 }
