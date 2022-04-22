@@ -8,8 +8,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features",
-    glue = "steps"
+    features = "src/test/resources/features/",
+    glue = "src/test/java/steps"
 
 )
 
