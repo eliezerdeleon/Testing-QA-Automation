@@ -7,7 +7,9 @@ public class GooglePage extends BasePage {
     }
 
     public void navigateToGoogle(){
-        
+
+        navigateTo("https://www.google.com");
+
     }
 
 }
