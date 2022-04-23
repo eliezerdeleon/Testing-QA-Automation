@@ -18,7 +18,7 @@ public class BasePage {
 
     public BasePage(WebDriver driver){
 
-        
+    wait = new WebDriverWait(driver, 10);     
     }
 
 
