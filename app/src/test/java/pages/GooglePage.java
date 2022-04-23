@@ -6,4 +6,8 @@ public class GooglePage extends BasePage {
         super(driver);
     }
 
+    public void navigateToGoogle(){
+        
+    }
+
 }
