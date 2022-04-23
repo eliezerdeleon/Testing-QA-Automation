@@ -7,8 +7,11 @@ public class BasePage {
     
     protected static WebDriver driver;
     private static WebDriverWait wait;
-    
 
+    static {
+
+
+    }
 
 
 }
