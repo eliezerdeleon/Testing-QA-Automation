@@ -14,7 +14,11 @@ public class BasePage {
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
+    }
 
+    public BasePage(WebDriver driver){
+
+        
     }
 
 
