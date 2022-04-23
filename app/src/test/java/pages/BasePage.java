@@ -21,5 +21,9 @@ public class BasePage {
     wait = new WebDriverWait(driver, 10);     
     }
 
+    public static void navigateTo(String url){
 
+
+        
+    }
 }
