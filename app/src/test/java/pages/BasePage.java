@@ -22,8 +22,8 @@ public class BasePage {
     }
 
     public static void navigateTo(String url){
+        driver.get(url);
 
 
-        
     }
 }
