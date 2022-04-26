@@ -18,7 +18,7 @@ google.navigateToGoogle();
 
 @When("^I enter a search criteria$")
 public void searchSomething(){
-google.enterSearchCriteria("Rosanna Hernandez");
+google.enterSearchCriteria("Eliezer De León");
 }
 
 @And("^click on the search button$")
