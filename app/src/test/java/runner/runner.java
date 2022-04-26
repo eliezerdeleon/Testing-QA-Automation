@@ -10,12 +10,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
     features = "src/test/resources/features/",
     glue = "steps"
-
-
-
-
 )
-
 
 
 public class runner {
