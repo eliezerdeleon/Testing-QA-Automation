@@ -13,6 +13,7 @@ GooglePage google = new GooglePage();
 @Given("^I am on the Google search page$")
 public void navigateToGoogle(){
 google.navigateToGoogle();
+google.clickGoogleSearch();
 }
 
 @When("^I enter a search criteria$")
