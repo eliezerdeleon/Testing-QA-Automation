@@ -13,17 +13,17 @@ GooglePage google = new GooglePage();
 @Given("^I am on the Google search page$")
 public void navigateToGoogle(){
 google.navigateToGoogle();
-google.clickGoogleSearch();
+
 }
 
 @When("^I enter a search criteria$")
 public void searchSomething(){
-
+google.enterSearchCriteria("Rosanna Hernandez");
 }
 
 @And("^click on the search button$")
 public void clickOnSearch(){
-
+google.clickGoogleSearch();
 }
 
 @Then("^the results match the criteria$")
