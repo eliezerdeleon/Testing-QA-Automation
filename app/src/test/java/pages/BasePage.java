@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
@@ -14,7 +15,7 @@ public class BasePage {
     private static WebDriverWait wait;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver\\chromedriver_108_0535971.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver, 10);
@@ -46,4 +47,12 @@ public class BasePage {
         Find(locator).sendKeys(textToWrite);
 
     }
+
+    public void selectFromDropdown(String locator, String valueToSelect){
+        Select dropdown = new Select (Find(locator));
+
+        dropdown.selectByVisibleText("Hola");
+        
+    }
+
 }
